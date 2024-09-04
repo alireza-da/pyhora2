@@ -8,7 +8,7 @@ Author-email: alirezadavoodi1378@gmail.com
 Project-URL: Source Code, https://github.com/alireza-da/pyhora2
 Project-URL: Documentation, https://github.com/alireza-da/pyhora2
 Classifier: Programming Language :: Python :: 3.10
-Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
