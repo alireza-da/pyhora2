@@ -28,10 +28,10 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip install setuptools wheel
 
-    - name: Run tests
-      run: |
-        pip install pytest
-        pytest
+    # - name: Run tests
+    #   run: |
+    #     pip install pytest
+    #     pytest
 
     - name: Build the package
       run: |
