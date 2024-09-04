@@ -38,7 +38,7 @@ setuptools.setup(
     author=package_info.author,
     author_email=package_info.author_email,
     description=package_info.description,
-    #include_package_data=True,
+    include_package_data=True,
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=package_info.url,
