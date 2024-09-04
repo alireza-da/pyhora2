@@ -10,7 +10,6 @@ pandas
 numpy
 swisseph
 geopy.geocoders
-import swisseph as swe
 collections
 itertools
 json
