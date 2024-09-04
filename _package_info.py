@@ -18,7 +18,7 @@
 
 name = "pyhora2"
 
-version = "3.5.5"
+version = "3.5.7"
 
 author = "Alireza Davoodi"
 
@@ -39,7 +39,7 @@ install_requires = ['swisseph','geopy','pytz','PyQt6','img2pdf','geocoder','time
 #extras_require = { }
 
 package_data = {
-    'horoscope': ["hora/data/*", 'hora/images/*']
+    'hora': ["hora/data/*", 'hora/images/*']
 }
 
 classifiers = [
