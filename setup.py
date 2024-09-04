@@ -32,7 +32,6 @@ package_info = SimpleNamespace(**package_info_dict)
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-print(package_info.install_requires)
 setuptools.setup(
     name=package_info.name,
     version=package_info.version,
