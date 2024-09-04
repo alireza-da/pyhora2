@@ -1,4 +1,4 @@
-PyHora 3.4.0
+PyHora 3.5.0
 =================
 Python package containing almost all the features described in the book
 
@@ -6,6 +6,10 @@ Vedic Astrology - An Integrated Approach - by PVR Narasimha Rao
  
 Observational Indian lunisolar calendar, horoscope and matching using the Swiss ephemeris (Hindu
 Drig-ganita Panchanga).
+
+Installation
+=================
+```pip install pyhora2```
 
 Features
 --------
@@ -31,25 +35,25 @@ Click Show PDF to save the screen as a PDF file
 Using the Code / command line
 ------------------------------
 ```
-	import horo_chart, panchanga, horoscope
-    App = QApplication(sys.argv)
-    chart_type = 'North'
-    chart = horo_chart.ChartWindow(chart_type=chart_type)
-    chart.language('Tamil')
-    chart.name('Krishna')
-    chart.place('Mathura,IN')
-    chart.date_of_birth('-3229,6,17')
-    chart.time_of_birth('23:59:00')
-    chart.time_zone('5.5')
-    chart.chart_type(chart_type)
-    chart.compute_horoscope()
-    chart.minimum_compatibility_score(20.0)
-    chart.mahendra_porutham(False)
-    chart.vedha_porutham(False)
-    chart.rajju_porutham(False)
-    chart.sthree_dheerga_porutham(False)
-    chart.show()
-    chart.save_as_pdf('delme.pdf')
+import horo_chart, panchanga, horoscope
+App = QApplication(sys.argv)
+chart_type = 'North'
+chart = horo_chart.ChartSimple(chart_type=chart_type)
+chart.language('Tamil')
+chart.name('Krishna')
+chart.place('Mathura,IN')
+chart.date_of_birth('-3229,6,17')
+chart.time_of_birth('23:59:00')
+chart.time_zone('5.5')
+chart.chart_type(chart_type)
+chart.compute_horoscope()
+chart.minimum_compatibility_score(20.0)
+chart.mahendra_porutham(False)
+chart.vedha_porutham(False)
+chart.rajju_porutham(False)
+chart.sthree_dheerga_porutham(False)
+chart.show()
+chart.save_as_pdf('delme.pdf')
 ```
 Accuracy
 --------
