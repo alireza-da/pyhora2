@@ -16,24 +16,23 @@
 #  If not, see <http://www.gnu.org/licenses/>.                                                   #
 #  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  #
 
-name = "PyHora"
+name = "pyhora2"
 
-version = "3.4.0"
+version = "3.5.0"
 
-author = "Sundar Sundaresan"
+author = "Alireza Davoodi"
 
-author_email = "Sundaram.Sundaresan@gmail.com"
+author_email = "alirezadavoodi1378@gmail.com"
 
-description = "A Python package for generating Indian style calendar, panchang, horoscope and compatibility"
+description = "A Python package for generating Indian style calendar, panchang, horoscope and compatibility. Advanced, clean, and well-packaged version of PyHora"
 
 url = "https://github.com/naturalstupid/pyhora"
 
 project_urls = {
-    "Source Code": "https://github.com/naturalstupid/pyhora",
-    "Documentation": "https://github.com/naturalstupid/pyhora",
+    "Source Code": "https://github.com/alireza-da/pyhora2",
+    "Documentation": "https://github.com/alireza-da/pyhora2",
 }
 
-#install_requires = ['itertools', "configparser", 'operator', 'collections', 'enum', 'csv', 'numpy', 'scamp', 'math', 're', 'regex', 'random',]
 install_requires = ['swisseph','geopy','pytz','PyQt6','img2pdf','geocoder','timezonefinder',
                     'pandas', 'numpy', 'pillow', 'requests']
 
@@ -44,7 +43,7 @@ package_data = {
 }
 
 classifiers = [
-    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.10",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
 ]

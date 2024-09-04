@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyhora2
+Version: 3.5.0
+Summary: A Python package for generating Indian style calendar, panchang, horoscope and compatibility. Advanced, clean, and well-packaged version of PyHora
+Home-page: https://github.com/naturalstupid/pyhora
+Author: Alireza Davoodi
+Author-email: alirezadavoodi1378@gmail.com
+Project-URL: Source Code, https://github.com/alireza-da/pyhora2
+Project-URL: Documentation, https://github.com/alireza-da/pyhora2
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: swisseph
+Requires-Dist: geopy
+Requires-Dist: pytz
+Requires-Dist: PyQt6
+Requires-Dist: img2pdf
+Requires-Dist: geocoder
+Requires-Dist: timezonefinder
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: requests

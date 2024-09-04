@@ -47,4 +47,5 @@ setuptools.setup(
     #extras_require=package_info.extras_require,
     package_data=package_info.package_data,
     classifiers=package_info.classifiers,
+    python_requires='>=3.8',
 )
