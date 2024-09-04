@@ -23,6 +23,7 @@ from types import SimpleNamespace
 package_info_file_path = os.path.join(os.path.dirname(__file__), "./", "_package_info.py")
 with open(package_info_file_path, "r") as f:
     file_contents_string = f.read()
+    
 package_info_dict: dict = {}
 exec(file_contents_string, None, package_info_dict)
 package_info = SimpleNamespace(**package_info_dict)

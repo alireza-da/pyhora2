@@ -1,4 +1,0 @@
-horoscope
-panchanga
-tests
-ui
