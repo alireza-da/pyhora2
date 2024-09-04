@@ -39,7 +39,7 @@ install_requires = ['swisseph','geopy','pytz','PyQt6','img2pdf','geocoder','time
 #extras_require = { }
 
 package_data = {
-    'hora': ["hora/data/*", 'hora/images/*']
+    '': ["*"]
 }
 
 classifiers = [

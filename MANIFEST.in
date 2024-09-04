@@ -1,4 +1,1 @@
-recursive-include hora/data/*
-recursive-include hora/images/*
-recursive-include hora/lang/*
-recursive-include hora/tests/*
+graft hora
