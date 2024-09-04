@@ -34,7 +34,8 @@ project_urls = {
 }
 
 #install_requires = ['itertools', "configparser", 'operator', 'collections', 'enum', 'csv', 'numpy', 'scamp', 'math', 're', 'regex', 'random',]
-install_requires = ['swisseph', 'geopy','pytz','PyQt6' ]
+install_requires = ['swisseph','geopy','pytz','PyQt6','img2pdf','geocoder','timezonefinder',
+                    'pandas', 'numpy', 'pillow', 'requests']
 
 #extras_require = { }
 

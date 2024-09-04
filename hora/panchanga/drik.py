@@ -1819,6 +1819,7 @@ def next_solar_date(jd_at_dob,place,years=1,months=1,sixty_hours=1):
     sun_long_at_dob = sun_long_at_dob[0]*30+sun_long_at_dob[1]
     (y,m,d,fh) = swe.revjul(jd_at_dob)
     #print((int(sun_long_at_dob/30),utils.to_dms(sun_long_at_dob%30,is_lat_long='plong')),(y,m,d,utils.to_dms(fh)))
+    
     sun_long_extra = ((years-1)*360+(months-1)*30+(sixty_hours-1)*2.5)%360
     jd_extra = int(((years-1)+(months-1)/12+(sixty_hours-1)/144)*const.tropical_year) #const.sidereal_year)
     #print('jd_extra',jd_extra)

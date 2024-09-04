@@ -66,9 +66,20 @@ def bhava_chart(jd_at_dob,place_as_tuple,ayanamsa_mode=const._DEFAULT_AYANAMSA_M
         @param years: Yearly chart. number of years from date of birth
         @param months: Monthly chart. number of months from date of birth
         @param sixty_hours: 60-hour chart. number of 60 hours from date of birth
-        @return: planet_positions list in the format [[planet,(raasi,planet_longitude)],...]] 
-                First element is that of Lagnam
-            Example: [ ['L',(0,13.4)],[0,(11,12.7)],...]] Lagnam in Aries 13.4 degrees, Sun in Taurus 12.7 degrees
+        @return: planet_positions list in the format 
+        {
+                "0": 4,
+                "1": 1,
+                "2": 2,
+                "3": 4,
+                "4": 3,
+                "5": 5,
+                "6": 7,
+                "7": 5,
+                "8": 11,
+                "L": 0
+        }
+
     """
     planet_positions = rasi_chart(jd_at_dob, place_as_tuple, ayanamsa_mode, years, months, sixty_hours,
                                   calculation_type=calculation_type)
@@ -91,6 +102,7 @@ def bhava_chart(jd_at_dob,place_as_tuple,ayanamsa_mode=const._DEFAULT_AYANAMSA_M
             if long < asc_start:
                 pp_bhava[p]=(h - 1)%12
     return pp_bhava
+
 def _hora_chart_pvr_method(planet_positions_in_rasi):
     """ Hora Chart - D2 Chart PV Narasimha Rao Method"""
     dvf = 2

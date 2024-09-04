@@ -1,6 +1,11 @@
 import os
 import sys
-path_root = os.path.dirname(os.path.abspath('../'))
-if path_root not in sys.path:
-    sys.path.append(str(path_root))
-    print('hora',path_root,'added to system path',sys.path)
+
+# PyHora/hora/__init__.py
+
+from .utils import *  # Import everything from utils
+from .horoscope import *
+from .panchanga import *
+from .ui import *     # Import everything from ui
+
+__all__ = ['utils', 'horoscope', 'panchanga', 'ui']

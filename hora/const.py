@@ -4,13 +4,13 @@ import numpy as np
 """ Module describing PyHora constants"""
 " setup paths "
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-_IMAGES_PATH = os.path.dirname(ROOT_DIR+"\\images\\")
-_IMAGE_ICON_PATH=os.path.join(ROOT_DIR,"\\images\\lord_ganesha2.jpg")
-_INPUT_DATA_FILE = os.path.join(ROOT_DIR,'data\\program_inputs.txt')
-_world_city_csv_file = os.path.join(ROOT_DIR,'data\\world_cities_with_tz.csv')
+_IMAGES_PATH = os.path.dirname(ROOT_DIR+"/images/")
+_IMAGE_ICON_PATH=os.path.join(ROOT_DIR,"/images/lord_ganesha2.jpg")
+_INPUT_DATA_FILE = os.path.join(ROOT_DIR,'data/program_inputs.txt')
+_world_city_csv_file = os.path.join(ROOT_DIR,'data/world_cities_with_tz.csv')
 _open_elevation_api_url = lambda lat,long:f'https://api.open-elevation.com/api/v1/lookup?locations={lat},{long}'
-_EPHIMERIDE_DATA_PATH = os.path.join(ROOT_DIR,'data\\ephe\\')
-_LANGUAGE_PATH = os.path.join(ROOT_DIR,'lang\\')
+_EPHIMERIDE_DATA_PATH = os.path.join(ROOT_DIR,'data/ephe/')
+_LANGUAGE_PATH = os.path.join(ROOT_DIR,'lang/')
 _DEFAULT_LANGUAGE = 'en'
 _DEFAULT_LANGUAGE_LIST_STR = 'list_values_'
 _DEFAULT_LANGUAGE_MSG_STR = 'msg_strings_'
