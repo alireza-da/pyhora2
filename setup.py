@@ -20,7 +20,7 @@ from types import SimpleNamespace
 
 # load _package_info.py into a SimpleNamespace, without having to import the whole carnatic package
 # (this is similar to the way scamp handles things)
-package_info_file_path = os.path.join(os.path.dirname(__file__), "./", "_package_info.py")
+package_info_file_path = os.path.join(os.path.dirname(__file__), "", "_package_info.py")
 with open(package_info_file_path, "r") as f:
     file_contents_string = f.read()
     
