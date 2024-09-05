@@ -34,7 +34,7 @@ Click Show PDF to save the screen as a PDF file
 
 Using the Code / command line
 ------------------------------
-`
+```sample.py
 from hora.ui import horo_chart
 
 App = QApplication(sys.argv)
@@ -55,7 +55,7 @@ chart.rajju_porutham(False)
 chart.sthree_dheerga_porutham(False)
 chart.show()
 chart.save_as_pdf('delme.pdf')
-`
+```
 Accuracy
 --------
 
