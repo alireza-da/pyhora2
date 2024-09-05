@@ -1,4 +1,4 @@
-name: Publish Package to Gemfury
+name: Publish Python Package to Gemfury
 
 on:
   push:
@@ -21,18 +21,14 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install setuptools wheel
+        pip install setuptools wheel fury  # Install fury along with other dependencies
 
     - name: Build package
       run: |
         python setup.py sdist bdist_wheel
 
-    - name: Install fury CLI
-      run: |
-        pip install fury
-
     - name: Publish to Gemfury
       env:
         FURY_AUTH: ${{ secrets.GEMFURY_TOKEN }}  # Use the secret stored in GitHub Secrets
       run: |
-        fury push dist/*.tar.gz dist/*.whl
+        python -m fury.cli push dist/*.tar.gz dist/*.whl  # Use fury as a Python module
