@@ -1,4 +1,4 @@
-name: Publish Python Package to Gemfury
+name: Publish Package to Gemfury
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'  # You can change this to the desired Python version
+        python-version: '3.9'  # You can change this to the desired Python version
 
     - name: Install dependencies
       run: |
@@ -27,9 +27,12 @@ jobs:
       run: |
         python setup.py sdist bdist_wheel
 
+    - name: Install fury CLI
+      run: |
+        pip install fury
+
     - name: Publish to Gemfury
       env:
         FURY_AUTH: ${{ secrets.GEMFURY_TOKEN }}  # Use the secret stored in GitHub Secrets
       run: |
-        pip install fury
         fury push dist/*.tar.gz dist/*.whl
