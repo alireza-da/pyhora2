@@ -31,4 +31,4 @@ jobs:
       env:
         FURY_AUTH: ${{ secrets.GEMFURY_TOKEN }}  # Use the secret stored in GitHub Secrets
       run: |
-        python -m fury.cli push dist/*.tar.gz dist/*.whl  # Use fury as a Python module
+        python -m fury push dist/*.tar.gz dist/*.whl  # Use fury as a Python module
