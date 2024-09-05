@@ -35,7 +35,8 @@ Click Show PDF to save the screen as a PDF file
 Using the Code / command line
 ------------------------------
 ```
-import horo_chart, panchanga, horoscope
+from hora.ui import horo_chart
+
 App = QApplication(sys.argv)
 chart_type = 'North'
 chart = horo_chart.ChartSimple(chart_type=chart_type)
