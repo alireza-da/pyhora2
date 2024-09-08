@@ -79,7 +79,9 @@ if __name__ == "__main__":
     res = utils.resource_strings
     from hora.horoscope.chart import charts
     from hora.panchanga import drik
-    dob = (1996,12,7); tob = (10,34,0); jd_at_dob = utils.julian_day_number(dob, tob)
+    dob = (1996,12,7)
+    tob = (10,34,0)
+    jd_at_dob = utils.julian_day_number(dob, tob)
     place_as_tuple = drik.Place('Chennai, India',13.0878,80.2785,5.5)
     planet_positions = charts.rasi_chart(jd_at_dob, place_as_tuple)
     h_to_p = utils.get_house_planet_list_from_planet_positions(planet_positions)
