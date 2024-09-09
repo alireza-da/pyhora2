@@ -18,7 +18,7 @@
 
 name = "pyhora2"
 
-version = "3.5.9"
+version = "3.6.0"
 
 author = "Alireza Davoodi"
 
@@ -33,7 +33,7 @@ project_urls = {
     "Documentation": "https://github.com/alireza-da/pyhora2",
 }
 
-install_requires = ['swisseph','geopy','pytz','PyQt6','img2pdf','geocoder','timezonefinder',
+install_requires = ['pyswisseph','geopy','pytz','PyQt6','img2pdf','geocoder','timezonefinder',
                     'pandas', 'numpy', 'pillow', 'requests']
 
 #extras_require = { }

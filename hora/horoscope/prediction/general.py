@@ -41,6 +41,7 @@ def _get_planets_in_houses_prediction(planet_positions,prediction_msgs):
         planet_house = house.get_relative_house_of_planet(lagna_house,p_to_h[planet])
         pl_msg = planet_msgs[str(planet_house)][planet]
         #print(planet,planet_house,pl_msg)
+        print(utils.PLANET_NAMES, planet)
         key = utils.PLANET_NAMES[planet]+'-'+utils.resource_strings['house_str']+'#'+str(planet_house)+":"
         results[ks] += "<b>"+key+"</b><br>"+pl_msg+"<br>"
     return results
@@ -82,7 +83,7 @@ if __name__ == "__main__":
     dob = (1996,12,7)
     tob = (10,34,0)
     jd_at_dob = utils.julian_day_number(dob, tob)
-    place_as_tuple = drik.Place('Chennai, India',13.0878,80.2785,5.5)
+    place_as_tuple = drik.Place('Chennai,India',13.0878,80.2785,5.5)
     planet_positions = charts.rasi_chart(jd_at_dob, place_as_tuple)
     h_to_p = utils.get_house_planet_list_from_planet_positions(planet_positions)
     print(h_to_p)
