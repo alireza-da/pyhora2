@@ -63,7 +63,7 @@ def _get_lords_in_houses_prediction(planet_positions,prediction_msgs):
         results[ks] += "<b>"+key+"</b><br>"+pl_msg+"<br>"
     return results
 def get_prediction_details(jd_at_dob,place,language=const._DEFAULT_LANGUAGE):
-    utils.set_language(lang)
+    utils.set_language(language)
     prediction_msgs = get_prediction_resources(language=language)
     #print('prediction keys',prediction_msgs.keys())
     results = {}
