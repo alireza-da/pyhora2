@@ -41,7 +41,7 @@ def _get_planets_in_houses_prediction(planet_positions,prediction_msgs):
         planet_house = house.get_relative_house_of_planet(lagna_house,p_to_h[planet])
         pl_msg = planet_msgs[str(planet_house)][planet]
         #print(planet,planet_house,pl_msg)
-        print(utils.PLANET_NAMES, planet)
+        
         key = utils.PLANET_NAMES[planet]+'-'+utils.resource_strings['house_str']+'#'+str(planet_house)+":"
         results[ks] += "<b>"+key+"</b><br>"+pl_msg+"<br>"
     return results
@@ -63,6 +63,7 @@ def _get_lords_in_houses_prediction(planet_positions,prediction_msgs):
         results[ks] += "<b>"+key+"</b><br>"+pl_msg+"<br>"
     return results
 def get_prediction_details(jd_at_dob,place,language=const._DEFAULT_LANGUAGE):
+    utils.set_language(lang)
     prediction_msgs = get_prediction_resources(language=language)
     #print('prediction keys',prediction_msgs.keys())
     results = {}
