@@ -1,4 +1,4 @@
-swisseph
+pyswisseph
 geopy
 pytz 
 PyQt6
