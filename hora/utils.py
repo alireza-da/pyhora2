@@ -878,6 +878,33 @@ def get_fraction(start_time_hrs,end_time_hrs,birth_time_hrs):
     tf = (end_time_hrs-birth_time_hrs)/tl
     #print('birth time',birth_time_hrs, 'tithi start',tithi_start_time_hrs,'tithi end',tithi_end_time_hrs,'tithi duration',tl,'tithi fraction',tf)
     return tf
+
+def get_place_and_julian(date_of_birth, time_of_birth, place_as_tuple):
+    """
+    This function takes a date of birth, time of birth, and a tuple representing a place's details,
+    and returns a Place object and the Julian date at the date of birth.
+
+    Parameters:
+    date_of_birth (tuple): A tuple representing the date of birth in the format (year, month, day).
+    time_of_birth (tuple): A tuple representing the time of birth in the format (hour, minute, second).
+    place_as_tuple (tuple): A tuple representing the place's details in the format (name, latitude, longitude, timezone).
+
+    Returns:
+    place (drik.Place): A Place object representing the location.
+    jd_at_dob (float): The Julian date at the date of birth.
+    """
+    date_of_birth = [int(dt) for dt in date_of_birth.replace(" ", "").split(",")]
+    time_of_birth = [int(dt) for dt in time_of_birth.replace(" ", "").split(",")]
+    place_as_tuple = [el for el in place_as_tuple.replace(" ", "").split(",")]
+    place_as_tuple[0] = f"{place_as_tuple[0]},{place_as_tuple[1]}".replace("'", "")
+    place_as_tuple.remove(place_as_tuple[1])
+    place = drig_panchanga.Place(place_as_tuple[0], float(place_as_tuple[1]), float(place_as_tuple[2]), float(place_as_tuple[3]))
+
+    jd_at_dob = julian_day_number(date_of_birth, time_of_birth)
+
+    return place, jd_at_dob
+    
+    
     
 if __name__ == "__main__":
     lang = 'ta'
