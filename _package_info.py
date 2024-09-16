@@ -18,13 +18,13 @@
 
 name = "pyhora2"
 
-version = "3.6.4"
+version = "3.6.5"
 
 author = "Alireza Davoodi"
 
 author_email = "alirezadavoodi1378@gmail.com"
 
-description = "A Python package for generating Indian style calendar, panchang, horoscope and compatibility. Advanced, clean, and well-packaged version of PyHora"
+description = "A Python package for generating Indian style calendar, panchang, horoscope and compatibility. Advanced, clean, and well-packaged extension to PyHora"
 
 url = "https://github.com/naturalstupid/pyhora"
 
