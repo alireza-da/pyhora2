@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: pyhora2
-Version: 3.6.5
-Summary: A Python package for generating Indian style calendar, panchang, horoscope and compatibility. Advanced, clean, and well-packaged version of PyHora
+Version: 3.6.6
+Summary: A Python package for generating Indian style calendar, panchang, horoscope and compatibility. Advanced, clean, and well-packaged extension to PyHora
 Home-page: https://github.com/naturalstupid/pyhora
 Author: Alireza Davoodi
 Author-email: alirezadavoodi1378@gmail.com

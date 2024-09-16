@@ -18,7 +18,7 @@
 
 name = "pyhora2"
 
-version = "3.6.5"
+version = "3.6.6"
 
 author = "Alireza Davoodi"
 

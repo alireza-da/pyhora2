@@ -1,6 +1,6 @@
 import itertools
 from hora import const,utils
-from hora.horoscope.chart import house
+from hora.horoscope.chart import house, charts
 from hora.horoscope.transit import tajaka
 from hora.utils import get_planet_house_dictionary_from_planet_positions
 """ Tajaka Yogas """
