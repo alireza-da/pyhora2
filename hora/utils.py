@@ -893,8 +893,8 @@ def get_place_and_julian(date_of_birth, time_of_birth, place_as_tuple):
     place (drik.Place): A Place object representing the location.
     jd_at_dob (float): The Julian date at the date of birth.
     """
-    date_of_birth = [int(dt) for dt in date_of_birth.replace(" ", "").split(",")]
-    time_of_birth = [int(dt) for dt in time_of_birth.replace(" ", "").split(",")]
+    date_of_birth = [int(dt) for dt in date_of_birth.replace(" ", "").split("-")]
+    time_of_birth = [int(dt) for dt in time_of_birth.replace(" ", "").split("-")]
     place_as_tuple = [el for el in place_as_tuple.replace(" ", "").split(",")]
     place_as_tuple[0] = f"{place_as_tuple[0]},{place_as_tuple[1]}".replace("'", "")
     place_as_tuple.remove(place_as_tuple[1])
